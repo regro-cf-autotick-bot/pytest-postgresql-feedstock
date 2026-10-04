@@ -1,13 +1,13 @@
 {% set name = "pytest-postgresql" %}
-{% set version = "8.1.0" %}
+{% set version = "9.1.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: ffd24027a28aba3d05a909fb03ee87d1d474574c3504f332d6047e8699170adc
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 9a4673870bde284ed200a7efb496ad7a90024348231f0d5be0d72946423a220f
 
 build:
   noarch: python
